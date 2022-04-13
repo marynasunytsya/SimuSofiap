@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Multi Step Form | CodingNepal</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+
+      <div class="container">
+         <header>Signup Form</header>
+
+
+          <!-- progress bar  -->
+         <div class="progress-bar">
+            <div class="step">
+               <p>
+                  Prêt
+               </p>
+               <div class="bullet">
+                  <span>1</span>
+               </div>
+               <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+               <p>
+                  Capacité
+               </p>
+               <div class="bullet">
+                  <span>2</span>
+               </div>
+               <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+               <p>
+                  Charges
+               </p>
+               <div class="bullet">
+                  <span>3</span>
+               </div>
+               <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+               <p>
+                  Validation
+               </p>
+               <div class="bullet">
+                  <span>4</span>
+               </div>
+               <div class="check fas fa-check"></div>
+            </div>
+         </div>
+
+
+
+         <div class="form-outer">
+            <form action="#">
+
+                <!-- first page -->
+               <div class="page slide-page">
+                  <div class="title">
+                    Informations générales:
+                  </div>
+                    <div class="field">
+                        <label class ="label" for="employeur">Employeur</label>
+                        <select name="employeur" id="employeur_select">
+                            <option value="sncf">SNCF</option>
+                            <option value="edf">EDF</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label class ="label" for="montant_p">Montant du projet</label>
+                        <input type="text" id="montant" name="montant_p" class="input_euro">
+                    </div>
+                    <div class="field">
+                        <label class="label" class ="label" for="residence_p">Résidence principale</label>
+                        <select name="residence_p" id="residence_p_select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label class="label" for="duree">Durée souhaitée (en mois)</label>
+                        <input type="text" id="duree" name="duree">
+                    </div>
+
+                    <div class="field">
+                        <label class="label" for="apport">Apport personnel</label>
+                        <input type="text" id="apport" name="apport" class="input_euro">
+                    </div>
+
+                    <div class="field">
+                        <label class="label" for="cp_acquis">Code postal de l'acquisition</label>
+                        <input type="text" id="cp_acquis" name="cp_acquis">
+                    </div>
+
+                    <div class="field">
+                        <label class="label" for="ville_acquis">Ville de l'acquisition</label>
+                        <input type="text" id="ville_acquis" name="ville_acquis">
+                    </div>
+
+                    <div class="field">
+                        <label class="label" for="emprunteurs">Emprunteurs</label>
+                        <select name="emprunteurs" id="emprunteurs">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+
+
+                  <div class="field">
+                     <button class="firstNext next">Suivant</button>
+                  </div>
+               </div>
+
+
+               <!-- second page -->
+               <div class="page">
+                  <div class="title">
+                     Calculer ma capacité d’emprunt:
+                  </div>
+                    <div class="field">
+                    <label class="label" for="revenus_mensuel">Revenus net du Foyer (mensuel)​</label>
+                    <input type="text" id="revenus_mensuel" name="revenus_mensuel" class="input_euro"><br><br>
+                    </div>
+
+                    <div class="field">
+                    <label class="label" for="montant_p">Montant du projet</label>
+                    <input type="text" id="montant" name="montant_p" class="input_euro"><br><br>
+                    </div>
+
+                    <div class="field">
+                    <label class="label" for="revenus_locatifs">Revenus locatifs​</label>
+                    <input type="text" id="revenus_locatifs" name="revenus_locatifs" class="input_euro"><br><br>
+                    </div>
+
+                    <div class="field">
+                    <label class="label" for="autres_revenus">Autres revenus​</label>
+                    <input type="text" id="autres_revenus" name="autres_revenus" class="input_euro"><br>
+                    </div>
+
+                  <div class="field btns">
+                     <button class="prev-1 prev">Retour</button>
+                     <button class="next-1 next">Suivant</button>
+                  </div>
+               </div>
+
+               <!-- third page -->
+               <div class="page">
+                  <div class="title">
+                     Charges:
+                  </div>
+                  <div class="field">
+                    <label class="label" for="credits_existants">Crédits existants​</label>
+                    <input type="text" id="credits_existants" name="credits_existants" class="input_euro"><br><br>
+                    </div>
+
+                    <div class="field">
+                    <label class="label" for="pension_alim">Pension alimentaire​</label>
+                    <input type="text" id="pension_alim" name="pension_alim" class="input_euro"><br><br>
+                    </div>
+
+                    <div class="field">
+                    <label class="label" for="autres_charges">Autres charges​​</label>
+                    <input type="text" id="autres_charges" name="autres_charges" class="input_euro"><br><br>
+                    </div>
+
+                  <div class="field btns">
+                     <button class="prev-2 prev">Retour</button>
+                     <button class="next-2 next">SUivant</button>
+                  </div>
+               </div>
+
+               <!-- last page -->
+               <div class="page">
+                  <div class="title">
+                     Informations personelles:
+                  </div>
+
+                    <div class="field">
+                    <label class="label" for="nom">Nom​</label>
+                    <input type="text" id="nom" name="nom"><br><br>
+                    </div>
+
+                    <div class="field">
+                    <label class="label" for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom"><br><br>
+                    </div>
+
+                    <div class="field">
+                    <label class="label" for="adresse_mail">Adresse mail​</label>
+                    <input type="text" id="adresse_mail" name="adresse_mail"><br><br>
+                    </div>
+
+                    <div class="field">
+                    <label class="label" for="numero_telephone">Numéro de téléphone</label>
+                    <input type="text" id="numero_telephone" name="numero_telephone"><br><br>
+                    </div>
+
+                  <div class="field btns">
+                     <button class="prev-3 prev">Retour</button>
+                     <button class="submit">Valider</button>
+                  </div>
+               </div>
+
+
+            </form>
+         </div>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>
