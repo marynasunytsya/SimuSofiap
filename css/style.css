@@ -1,0 +1,67 @@
+.page_container {
+  width: 400px;
+  text-align: right;
+  background-color: rgba(194, 203, 210, 0.33);
+  padding: 35px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+.page_container h2 {
+  font-size: 18px;
+  text-align: left;
+}
+
+.page_container h3 {
+  font-size: 16px;
+  text-align: left;
+}
+
+.page_container label {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.page_container form input:not(#submit_btn),
+.page_container form select {
+  width: 200px;
+  float: right;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 3px 5px;
+  background-color: white;
+  height: 24px;
+}
+
+.input_tab {
+  height: 24px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.page_container form input#submit_btn {
+  color: white;
+  background-color: #83054d;
+  width: 100px;
+  padding: 10px 20px;
+  margin: 4px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.page_container form input#submit_btn:hover {
+  background-color: #6b033e;
+}
+
+.input_euro {
+  background: url("http://pngimg.com/uploads/euro_sign/euro_sign_PNG21566.png")
+    no-repeat right;
+  background-size: 15px;
+}
